@@ -13,9 +13,9 @@ interface Props {
 }
 
 const EventCard: FC<Props> = ({ basketId, event }) => {
-  const [ticketAmount, setTicketAmount] = useState(0);
   const navigate = useNavigate();
   const queryClient = useQueryClient();
+  const [ticketAmount, setTicketAmount] = useState(0);
 
   const { mutate: addEventToBasket, isLoading } = useAddEventToBasket({ onSuccess: () => {
     queryClient.invalidateQueries(QueryKeys.basket);

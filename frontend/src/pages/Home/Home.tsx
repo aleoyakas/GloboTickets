@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 const Home: FC = () => {
   const { data: userId } = useGetUser();
-  const { data: basket } = useGetBasket({ userId });
+  const { data: basket } = useGetBasket({ userId }, { enabled: typeof userId !== 'undefined'});
   const { data: events, error: eventsError } = useGetEvents();
 
   if (eventsError) {
