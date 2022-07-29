@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=GlobalTicketsShoppingBasketDb
+      - POSTGRES_USER=ShoppingBasketUser
+      - POSTGRES_PASSWORD=mysecretpassword
+    expose:
+      - 5433
+    ports:
+      - 5433:5432

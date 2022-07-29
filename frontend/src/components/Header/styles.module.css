@@ -1,0 +1,31 @@
+.container {
+  background-color: #000;
+  color: #FFF;
+  display: flex;
+  padding: 20px;
+}
+
+.heading {
+  margin: 0px;
+}
+
+.navMenu ul {
+  list-style-type: none;
+}
+
+.container,
+.navMenu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navLink {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}

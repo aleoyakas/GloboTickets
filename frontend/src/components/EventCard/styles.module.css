@@ -1,0 +1,27 @@
+.container {
+  width: 80vw;
+  margin: auto;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.eventCard {
+  border: 1px solid #212121;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.eventInfo {
+  display: flex;
+  gap: 10px;
+}
+
+.eventImg {
+  width: 40%;
+}
+
+.addToCartBtn {
+  display: block;
+  margin: auto;
+}

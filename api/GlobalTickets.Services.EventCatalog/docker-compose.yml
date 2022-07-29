@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=GlobalTicketsEventsDb
+      - POSTGRES_USER=EventsUser
+      - POSTGRES_PASSWORD=mysecretpassword
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
