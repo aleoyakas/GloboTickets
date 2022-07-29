@@ -19,6 +19,7 @@ const EventCard: FC<Props> = ({ basketId, event }) => {
 
   const { mutate: addEventToBasket, isLoading } = useAddEventToBasket({ onSuccess: () => {
     queryClient.invalidateQueries(QueryKeys.basket);
+    queryClient.invalidateQueries(QueryKeys.basketLine);
   }});
 
   const addEvent = () => {
