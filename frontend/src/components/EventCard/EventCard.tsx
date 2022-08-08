@@ -55,7 +55,7 @@ const EventCard: FC<Props> = ({ basketId, event }) => {
           <button
             onClick={addEvent}
             className={styles.addToCartBtn}
-            disabled={ticketAmount === 0}
+            disabled={ticketAmount === 0 || !basketId}
           >
             Add to Cart
           </button>
